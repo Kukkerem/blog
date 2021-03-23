@@ -1,0 +1,31 @@
+site_name: My Blog
+site_url: 
+theme:
+  name: material
+  # custom_dir: overrides
+  language: en
+  palette:
+    scheme: preference
+    primary: indigo
+    accent: indigo
+  # favicon: images/favicon.png
+  # logo: assets/logo.png
+  icon:
+    logo: material/library
+  features:
+    - navigation.instant
+    - header.autohide
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Kukkerem/blog/
+copyright: Copyright &copy; 2021 Zoltan Szabo
+plugins:
+  - git-revision-date-localized:
+      type: timeago
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - toc:
+      permalink: true
